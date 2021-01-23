@@ -1,0 +1,175 @@
+body {
+    /*Styles for the body tag*/
+    background-color: #06a9ff;
+    /*Background color changes to hex value*/
+    display: flex;
+    /*Displays flexbox*/
+    justify-content: center;
+    /*How content is displayed along the main axis*/
+    align-items: center;
+    /*Aligns the items centered*/
+    min-height: 100vh;
+    /*Minimum height is 100vh*/
+}
+
+html {
+    /*Styles for the html tag*/
+    box-sizing: border-box;
+    /*Sets width and height of the element*/
+    font-family: 'Open Sans', sans serif;
+    /*Font changes*/
+}
+
+.panel {
+    /*Styles for panel class*/
+    background-color: white;
+    /*Background color changes*/
+    border-radius: 10px;
+    /*Border radius changes to 10px*/
+    padding: 15px 25px;
+    /*Sets padding on all four sides at once*/
+    width: 100%;
+    /*Width takes 100%*/
+    max-width: 960px;
+    /*Max width indicates the maximum width allowed*/
+    display: flex;
+    /*Displays flexbox*/
+    flex-direction: column;
+    /*Sets the direction of flexbox to column(mobile)*/
+    text-align: center;
+    /*Aligns the text to the center position*/
+    text-transform: uppercase;
+    /*Changes all text to uppercase*/
+}
+
+.pricing-plan {
+    /*Styles for the pricing plan*/
+    border-bottom: 1px solid #e1f1ff;
+    /*Sets the bottom border with a solid colored*/
+}
+
+.pricing-plan:last-child {
+    /*Styles for the last portion of the pricing-plan class*/
+    border-bottom: none;
+    /*Eliminates the bottom border*/
+}
+
+.pricing-img {
+    /*Styles for images*/
+    margin-bottom: 25px;
+    /*Sets the bottom margin to 25px*/
+    width: 100%;
+    max-width: 100%;
+    /*Width is 100% with the maximum allowed width to be used being 100%*/
+}
+
+.pricing-header {
+    /*Styles for pricing-header class*/
+    color: #888;
+    /*Font color changes*/
+    font-weight: 600;
+    /*The font weight is heavier*/
+    letter-spacing: 1px;
+    /*Spacing between letters*/
+}
+
+.pricing-features {
+    /*Styles for pricing features*/
+    margin: 50px 0 25px;
+    /*Margin is set*/
+    color: #016ff9;
+    /*Font color changes*/
+}
+
+.pricing-features-item {
+    /*Styles for pricing-features-item class*/
+    font-weight: 600;
+    /*Heavier font weight*/
+    letter-spacing: 1px;
+    /*Letter spacing*/
+    font-size: 12px;
+    /*Font size set to 12px*/
+    line-height: 1.5;
+    /*Line height is 15*/
+    padding: 15px 0;
+    /*Padding dimensions are set*/
+    border-top: 1px solid #e1f1ff;
+    /*Border styles*/
+}
+
+.pricing-features-item:last-child {
+    /*Last item in the pricing-features-item class styles*/
+    border-bottom: none;
+    /*No border*/
+}
+
+.pricing-price {
+    /*Styles for pricing-price*/
+    color: #016ff9;
+    /*Color change*/
+    display: block;
+    /*Generates a block element block*/
+    font-size: 32px;
+    /*Font size increased*/
+    font-weight: 700;
+    /*Heavier font weight*/
+}
+
+.pricing-button {
+    /*Styles for pricing-button*/
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    /*Border styles*/
+    color: #348efe;
+    /*Color change*/
+    display: inline-block;
+    /*Displays the inline elements blocks*/
+    padding: 15px 35px;
+    /*Padding styles*/
+    text-decoration: none;
+    /*No text decorations*/
+    margin: 25px 0;
+    /*Margin styles*/
+    transition: background-color 200ms ease-in-out;
+    /*Transitions for the buttons*/
+}
+
+.pricing-button:hover, .pricing-button:focus {
+    /*Styles for when the mouse hovers the button*/
+    background-color: #e1f1ff;
+    /*Background color changes*/
+}
+
+.pricing-button.is-featured {
+    /*Styles for pricing-button.is-feautured(main button)*/
+    background-color: #48aaff;
+    color: white;
+    /*Background and font color changes*/
+}
+
+.pricing-button.is-featured:hover, .pricing-button.is-featured:focus {
+    /*Styles for when the mouse hovers over the main button that is featured*/
+    background-color: #269aff;
+    color: white;
+    /*Changes the font and background color*/
+}
+
+@media (min-width: 900px){
+    /*Styles for increased screen sizes(Not mobile devices)*/
+    .panel {
+        /*Styles for the desktop*/
+        flex-direction: row;
+        /*Displays panel in a row and not a column*/
+    }
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        /*Border styles*/
+        padding: 25px 50px;
+        /*Padding styles*/
+    }
+    .pricing-plan:last-child {
+        border-right:none;
+        /*Border eliminated*/
+    }
+}
